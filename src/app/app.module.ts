@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 
 //modulos
@@ -9,9 +10,11 @@ import { PagesModule } from './pages/pages.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
 //rutas
 import { APP_ROUTES } from './app.routes';
-import { PagesComponent } from './pages/pages.component';
+
+
 
 
 
@@ -19,10 +22,10 @@ import { PagesComponent } from './pages/pages.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent    
   ],
   imports: [
-    BrowserModule, APP_ROUTES, PagesModule
+    BrowserModule, APP_ROUTES, PagesModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
